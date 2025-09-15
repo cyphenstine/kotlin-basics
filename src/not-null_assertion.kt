@@ -6,4 +6,5 @@ fun main(){
     val input2 = readln().toIntOrNull();
     val result = input1!! + input2!!; // The not-null assertion operator (!!) converts a nullable type to a non-null type. It's used when you're certain a value won't be null. If there is any null value, the program will crash with a NullPointerException.
     println("result: $result");
+
 }

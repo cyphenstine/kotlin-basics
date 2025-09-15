@@ -4,4 +4,5 @@ fun main() {
     val b = 7; // val for constants
     println(a);
     println(b);
+
 }
