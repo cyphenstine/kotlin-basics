@@ -5,5 +5,4 @@ fun main(){
     val input2 = readln().toIntOrNull() ?: 0; // setting a default value
     val result = input1 + input2;
     println("result: $result");
-    
 }
