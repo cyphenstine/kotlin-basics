@@ -1,3 +1,5 @@
+import javax.sql.rowset.Predicate
+
 fun main() {
     println("Enter a string")
     val input = readln()
@@ -15,9 +17,19 @@ fun main() {
     val aLambda:(Char) -> Boolean = {
         it.isLetter()
     }
-    val lettersOnly2 = input.filter (aLambda)
+    val lettersOnly2 = input.myFilter (aLambda)
 
     println(lettersOnly)
     println(evenNumbers)
     println(lettersOnly2)
+}
+
+fun String.myFilter(predicate: (Char) -> Boolean): String {
+    return buildString {
+        for (char in this@myFilter){
+            if (predicate(char)){
+                append(char)
+            }
+        }
+    }
 }
