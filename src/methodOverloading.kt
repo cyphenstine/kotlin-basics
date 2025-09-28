@@ -1,5 +1,6 @@
 fun main() {
     val number = 200
+    println("hello".stringAndIntReversed())
     println(number.stringAndIntReversed());
     println((number.stringAndIntReversed()) * 1234)
 }

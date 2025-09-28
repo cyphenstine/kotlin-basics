@@ -1,5 +1,3 @@
-import javax.sql.rowset.Predicate
-
 fun main() {
     println("Enter a string")
     val input = readln()
